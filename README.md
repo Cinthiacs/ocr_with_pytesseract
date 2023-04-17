@@ -23,6 +23,11 @@
  
 ## Como usar
 1. Clone este repositório em sua máquina local.
+
+```bash
+# clonar repositório
+git clone https://github.com/Cinthiacs/ocr_with_pytesseract.git
+```
 2. Abra o arquivo main.py em sua IDE Python de sua preferência.
 3. Execute o script.
 
