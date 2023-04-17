@@ -56,6 +56,10 @@ git clone https://github.com/Cinthiacs/ocr_with_pytesseract.git
 ## Abaixo temos o algorítimo que abre uma imagem com nome "Rg_fake.png" e realiza alguns processamentos nela:
 
  #### image = cv2.imread('Rg_fake.png')
+ 
+ <div align="center">
+  <img width= "411" alt="IMG_20230202_113442" src="https://github.com/Cinthiacs/ocr_with_pytesseract/blob/main/Rg_fake.png">
+</div>
 
 ## Converte a imagem para escala de cinza e aplica um limiar
 
