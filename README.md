@@ -36,7 +36,7 @@
 5. Exibe o texto extraído no console.
 
 ## Exemplo
-* A seguir, é mostrado um exemplo de como a imagem é processada e como o texto é extraído:
+A seguir, é mostrado um exemplo de como a imagem é processada e como o texto é extraído:
 
 #### import cv2
 #### import pytesseract
@@ -47,7 +47,7 @@
 
 #### pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
-## A seguir, o código abre uma imagem com nome "Rg_fake.png" e realiza alguns processamentos nela:
+## O código a seguir abre uma imagem com nome "Rg_fake.png" e realiza alguns processamentos nela:
 
 #### image = cv2.imread('Rg_fake.png')
 
