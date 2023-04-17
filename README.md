@@ -66,10 +66,6 @@ git clone https://github.com/Cinthiacs/ocr_with_pytesseract.git
  #### gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
  #### gray = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
  
-<div align="center">
-  <img width= "411" alt="IMG_20230202_113442" src="https://github.com/Cinthiacs/ocr_with_pytesseract/blob/main/cnhFake.png">
-</div>
-
 ## Salva a imagem em um arquivo temporário
 
  #### filename = "{}.png".format(os.getpid())
@@ -91,6 +87,11 @@ git clone https://github.com/Cinthiacs/ocr_with_pytesseract.git
 ## Plota a imagem em escala de cinza
  #### plt.imshow(gray)
 - O código plota a imagem em escala de cinza usando a biblioteca Matplotlib. 
+
+<div align="center">
+  <img width= "411" alt="IMG_20230202_113442" src="https://github.com/Cinthiacs/ocr_with_pytesseract/blob/main/cnhFake.png">
+</div>
+
 
 ## Exibe o texto extraído
  #### print(type(text))
