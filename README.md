@@ -91,5 +91,5 @@
 
  Contribuições são sempre bem-vindas! Se você quiser adicionar alguma funcionalidade ou corrigir um problema, sinta-se à vontade para enviar um pull request.
 
-## Autora:
- Cinthia Cavalheiro.
+### Autora
+Cinthia Cavalheiro.
