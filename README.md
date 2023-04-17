@@ -85,34 +85,34 @@
 - Exibe o tipo do objeto text.
 - Também é utilizada a biblioteca regular expression re para extrair somente letras maiúsculas do texto extraído da imagem.
 
-- A partir daqui, o código começa a trabalhar com a câmera. O programa abre a câmera e começa a exibir a imagem em tempo real, após aplicar alguns filtros e definições de tamanho:
+## A partir daqui, o código começa a trabalhar com a câmera. O programa abre a câmera e começa a exibir a imagem em tempo real, após aplicar alguns filtros e definições de tamanho:
 
-cam = cv2.VideoCapture(1)
-frame = None
-margin = 30
+ cam = cv2.VideoCapture(1)
+ frame = None
+ margin = 30
 
-f_h = round(cam.get(cv2.CAP_PROP_FRAME_HEIGHT ))
-f_w = round(cam.get(cv2.CAP_PROP_FRAME_WIDTH ))
+ f_h = round(cam.get(cv2.CAP_PROP_FRAME_HEIGHT ))
+ f_w = round(cam.get(cv2.CAP_PROP_FRAME_WIDTH ))
 
-scale_percent = 1.5 # percent of original size
-s_w = int(f_w * scale_percent)
-s_h = int(f_h * scale_percent)
-dim = (s_w, s_h)
+ scale_percent = 1.5 # percent of original size
+ s_w = int(f_w * scale_percent)
+ s_h = int(f_h * scale_percent)
+ dim = (s_w, s_h)
 
-r_h = round(s_h - s_h * 0.1)
-r_w = round(1.4 * r_h)
+ r_h = round(s_h - s_h * 0.1)
+ r_w = round(1.4 * r_h)
 
-x_r = s_w - r_w
-y_r = s_h - r_h
+ x_r = s_w - r_w
+ y_r = s_h - r_h
 
-rect_ext = [(x_r, y_r), (r_w, r_h)]
-rect_int = [(x_r+margin, y_r+margin), (r_w - margin, r_h - margin)]
+ rect_ext = [(x_r, y_r), (r_w, r_h)]
+ rect_int = [(x_r+margin, y_r+margin), (r_w - margin, r_h - margin)]
 
-while True:
-     
-    check,frame=cam.read()
-    
-    resized = cv2
+ while True:
+
+   check,frame=cam.read()
+
+   resized = cv2
 
 
 ## Contribuição
