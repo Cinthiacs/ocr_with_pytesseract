@@ -14,13 +14,11 @@
  #### !pip install pytesseract
  #### !pip install opencv-python
  
-1. A primeira biblioteca é responsável pela realização do OCR (Optical Character Recognition) que reconhece os caracteres da imagem. 
-
-2. A segunda biblioteca é utilizada para realizar o processamento de imagens e exibição da imagem em tempo real.
- 
-- Você precisa ter o Tesseract-OCR instalado em sua máquina. 
-- Para usuários do Windows, você pode baixá-lo aqui: https://github.com/UB-Mannheim/tesseract/wiki. 
-- Certifique-se de adicionar o diretório de instalação ao PATH do sistema.
+1. A primeira biblioteca é responsável pela realização do OCR (Optical Character Recognition) que reconhece os caracteres da imagem.
+2. A segunda biblioteca é utilizada para realizar o processamento de imagens e exibição da imagem em tempo real. 
+3. Você precisa ter o Tesseract-OCR instalado em sua máquina. 
+4. Para usuários do Windows, você pode baixá-lo aqui: https://github.com/UB-Mannheim/tesseract/wiki. 
+5. Certifique-se de adicionar o diretório de instalação ao PATH do sistema.
  
 ## Como usar
 1. Clone este repositório em sua máquina local.
