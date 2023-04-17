@@ -1,8 +1,9 @@
 # ocr_with_pytesseract
 
-- Este algorítimo foi produzido para realizar a leitura de um documento de identificação e exibir sua imagem em tempo real em uma câmera.
+- Este projeto é uma implementação de um algoritmo para realizar a leitura de um documento de identificação e exibir sua imagem em tempo real em uma câmera, desenvolvido em Python na IDE Jupyter Notebook.
 
 ## Sobre o projeto
+
 - Utiliza as bibliotecas Pytesseract e OpenCV para realizar a leitura de um documento de identificação e exibir sua imagem em tempo real em uma câmera. 
 
 ## Pré-requisitos
