@@ -6,11 +6,10 @@
 - Utiliza as bibliotecas Pytesseract e OpenCV para realizar a leitura de um documento de identificação e exibir sua imagem em tempo real em uma câmera. 
 
 ## Pré-requisitos
-- Certifique-se de ter as seguintes bibliotecas instaladas em sua máquina:
-
+* Certifique-se de ter as seguintes bibliotecas instaladas em sua máquina:
 * Pytesseract
 * OpenCV
-- Você pode instalá-las usando o comando pip:
+* Você pode instalá-las usando o comando pip:
 
  #### !pip install pytesseract
  #### !pip install opencv-python
