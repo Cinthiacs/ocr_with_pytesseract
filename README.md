@@ -43,30 +43,40 @@ import pytesseract
 import os
 import re
 
-# Configuração do Pytesseract
+## Configuração do Pytesseract
+
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
-# Abre a imagem
+## A seguir, o código abre uma imagem com nome "Rg_fake.png" e realiza alguns processamentos nela:
+
 image = cv2.imread('Rg_fake.png')
 
-# Converte a imagem para escala de cinza e aplica um limiar
+## Converte a imagem para escala de cinza e aplica um limiar
+
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 gray = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
 
-# Salva a imagem em um arquivo temporário
+## Salva a imagem em um arquivo temporário
+
 filename = "{}.png".format(os.getpid())
 cv2.imwrite(filename,gray)
 
-# Extrai o texto da imagem
+- O código converte a imagem para escala de cinza e aplica um limiar para obter apenas os pixels mais escuros (texto preto) na imagem. Em seguida, o código salva a imagem com a conversão para escala de cinza em um arquivo temporário que será usado na etapa seguinte.
+
+## Extrai o texto da imagem
 text = pytesseract.image_to_string(Image.open(filename), lang='por')
 
-# Remove o arquivo temporário
+- Aqui, a biblioteca Pytesseract é configurada para usar o executável do Tesseract instalado no Windows. Em seguida, a função image_to_string é chamada com a imagem em escala de cinza e o idioma "por" (português) é especificado. 
+- O texto extraído é exibido no console e o arquivo temporário é excluído.
+
+## Remove o arquivo temporário
 os.remove(filename)
 
-# Plota a imagem em escala de cinza
+
+## Plota a imagem em escala de cinza
 plt.imshow(gray)
 
-# Exibe o texto extraído
+## Exibe o texto extraído
 print(type(text))
 print(re.sub(r'[^\W{A-Z}]', '', text))
 
